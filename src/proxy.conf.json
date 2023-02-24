@@ -1,0 +1,18 @@
+{
+  "/api": {
+    "target": "https://api.contest.yandex.net/api/public/v2",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  },
+  "/jwt": {
+    "target": "https://oauth.yandex.ru",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/jwt": ""
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.login-container {
+  display: block;
+  border: black solid 2px;
+  margin: 40px auto;
+  width: 75%;
+  padding: 25px;
+  border-radius: 20px;
+  background-color: white;
+
+  &_link {
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
+  }
+
+  &_text {
+    display: block;
+    font-family: Quicksand, sans-serif;
+    &__main {
+      text-align: center;
+      font-size: max(2.5vw, 2.5vh);
+      margin: 0 0 30px 0;
+    }
+
+    &__additional {
+      font-size: min(max(1.7vw, 1.7vh), 18px);
+    }
+  }
+
+  &_info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}

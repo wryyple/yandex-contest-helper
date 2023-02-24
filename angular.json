@@ -71,6 +71,10 @@
               "browserTarget": "yandex-contest-helper-frontend:build:development"
             }
           },
+          "options": {
+            "browserTarget": "yandex-contest-helper-frontend:build",
+            "proxyConfig": "src/proxy.conf.json"
+          },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

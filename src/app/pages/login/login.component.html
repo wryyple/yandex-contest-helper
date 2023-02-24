@@ -1,1 +1,9 @@
-<button (click)="loginWithYandex()">Login with Yandex</button>
+<div class="login-container">
+  <div class="login-container_text login-container_text__main">Welcome to Yandex Contest Helper</div>
+  <div class="login-container_info">
+    <div class="login-container_text login-container_text__additional">To use the "Yandex Contest Helper" tool, you need to log in to the Yandex network.</div>
+    <a class="login-container_link" (click)="loginWithYandex()" href="">
+      <app-login-button></app-login-button>
+    </a>
+  </div>
+</div>
