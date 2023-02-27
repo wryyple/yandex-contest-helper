@@ -18,7 +18,4 @@ export class MainComponent {
   public getContest() {
     this.router.navigate([`${this.router.url}/${this.searchQuery}`]);
   }
-
-
-
 }

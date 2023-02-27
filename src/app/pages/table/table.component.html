@@ -1,1 +1,11 @@
-<p>table works!</p>
+<ng-container *ngIf="isError">
+  <div class="error">
+    <div class="text error_sign">Oops! Something went wrong!</div>
+    <div class="text error_message">This contest probably doesn't exist or you don't have access to it.</div>
+    <a class="text error_btn" [tabIndex]="0" href="main">← Go back</a>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="!isError">
+  <p>This is table!</p>
+</ng-container>

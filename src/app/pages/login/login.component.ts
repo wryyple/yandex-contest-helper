@@ -25,6 +25,7 @@ export class LoginComponent implements OnInit {
   }
 
   public loginWithYandex() {
-    window.location.href = `https://oauth.yandex.ru/authorize?response_type=code&client_id=${Globals.Client_ID}`;
+    // /authorize?response_type=code&client_id=bbf0d26f16074426bba9724c131784ae
+    window.location.href = `/jwt/authorize?response_type=code&client_id=${Globals.Client_ID}`;
   }
 }

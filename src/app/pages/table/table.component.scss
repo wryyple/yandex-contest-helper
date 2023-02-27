@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.error {
+    width: 75%;
+    border-radius: 30px;
+    border: 2px solid crimson;
+    padding: 25px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: white;
+  &_sign {
+    font-size: min(max(2vh, 2vw), 37px);
+    color: red;
+  }
+  &_message {
+    font-size: min(max(1.6vh, 1.6vw), 31px);
+  }
+  &_btn {
+    background: radial-gradient(103.95% 1413.54% at -3.95% 100%, #D33753 0%, #D13660 52.83%, #C72D65 100%);
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+    font-size: max(1.6vh, 1.6vw);
+    text-decoration: none;
+    &:hover {
+      background: radial-gradient(100% 12158.24% at 99.42% 0%, #C72D65 0%, #D23760 48.44%, #D23755 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(100% 12158.24% at 99.42% 0%, #C72D65 0%, #D23760 48.44%, #D23755 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+      cursor: pointer;
+    }
+    &:active {
+      background: radial-gradient(100% 12158.24% at 99.42% 0%, #EB4C60 0%, #EB4C60 48.44%, #EB4C60 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(100% 12158.24% at 99.42% 0%, #C72D65 0%, #D23760 48.44%, #D23755 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(100% 12158.24% at 99.42% 0%, #C72D65 0%, #D23760 48.44%, #D23755 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    }
+    &:focus {
+      background: radial-gradient(103.95% 1413.54% at -3.95% 100%, #D33753 0%, #D13660 52.83%, #C72D65 100%);
+    }
+  }
+}
+
+.text {
+  display: block;
+  font-family: Quicksand, sans-serif;
+}
